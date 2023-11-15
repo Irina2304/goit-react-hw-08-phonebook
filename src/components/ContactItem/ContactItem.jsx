@@ -1,6 +1,6 @@
 import { StyledItem, StyledBtm, StyledText } from './ContactItem.styled';
 import { useDispatch } from 'react-redux';
-import { fetchDelContact } from 'redux/operations';
+import { fetchDelContact } from 'redux/contacts/operations';
 
 export const ContactItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export const ContactItem = ({ item }) => {
   return (
     <StyledItem>
       <StyledText>
-        {item.name}: {item.phone}
+        {item.name}: {item.number}
       </StyledText>
       <StyledBtm type="button" name={item.id} onClick={onClick}>
         delete

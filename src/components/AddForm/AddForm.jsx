@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { fetchAddContact } from 'redux/operations';
+import { fetchAddContact } from 'redux/contacts/operations';
 import Notiflix from 'notiflix';
 import {
   StyledForm,
@@ -9,7 +9,7 @@ import {
   StyledInput,
 } from './AddForm.styled';
 import { useState } from 'react';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 
 export const AddForm = () => {
   const dispatch = useDispatch();
