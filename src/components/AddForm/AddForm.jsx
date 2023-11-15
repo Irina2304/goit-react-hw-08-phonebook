@@ -2,12 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { fetchAddContact } from 'redux/contacts/operations';
 import Notiflix from 'notiflix';
-import {
-  StyledForm,
-  StyledLabel,
-  StyledBtm,
-  StyledInput,
-} from './AddForm.styled';
+import { StyledForm, StyledLabel, Btn, StyledInput } from './AddForm.styled';
 import { useState } from 'react';
 import { selectContacts } from 'redux/contacts/selectors';
 
@@ -73,7 +68,7 @@ export const AddForm = () => {
           required
         />
       </StyledLabel>
-      <StyledBtm type="submit">Add contact</StyledBtm>
+      <Btn type="submit">Add contact</Btn>
     </StyledForm>
   );
 };

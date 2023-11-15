@@ -1,26 +1,26 @@
 import styled from 'styled-components';
 
-export const StyledItem = styled.li`
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-  border: solid 1px #7d6b40;
-  padding: 5px 15px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  &:hover,
-  &:focus {
-    background-color: #f7e3c0;
-  }
+export const Form = styled.form`
+  width: 320px;
 `;
 
-export const StyledText = styled.p`
+export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
   color: #7d6b40;
 `;
 
-export const StyledBtn = styled.button`
+export const Input = styled.input`
+  border-radius: 10px;
+  background-color: #fbf5ea;
+  border: 1px solid;
+  border-color: #efd7a0;
+  color: #7d6b40;
+  padding: 9px 21px;
+`;
+
+export const Btn = styled.button`
   display: block;
   font-weight: 600;
   font-size: 14px;

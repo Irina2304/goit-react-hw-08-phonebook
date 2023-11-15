@@ -1,26 +1,17 @@
 import styled from 'styled-components';
 
-export const StyledItem = styled.li`
+export const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  gap: 20px;
   align-items: center;
-  justify-content: space-between;
-  border: solid 1px #7d6b40;
-  padding: 5px 15px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  &:hover,
-  &:focus {
-    background-color: #f7e3c0;
-  }
+  gap: 12px;
 `;
 
-export const StyledText = styled.p`
+export const Username = styled.p`
+  font-weight: 700;
   color: #7d6b40;
 `;
 
-export const StyledBtn = styled.button`
+export const Btn = styled.button`
   display: block;
   font-weight: 600;
   font-size: 14px;
